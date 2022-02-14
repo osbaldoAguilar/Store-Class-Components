@@ -101,6 +101,7 @@ class App extends React.Component {
                                 firstPart="Fish"
                                 lastPart="Store"
                                 tagline="Freash Seafood Market"
+                                storeId={this.props.match.params.storeId}
                             />
                             <ul className="fishes">
                                 {Object.keys(this.state.fishes).map(key=> 

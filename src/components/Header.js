@@ -2,16 +2,18 @@ import React from "react";
 import propTypes from "prop-types";
 
 
-const Header = ({firstPart, lastPart, tagline}) => 
+const Header = ({tagline, storeId}) => 
     (
         <header className="top">
-                <h1>{firstPart}
-                    <span className="ofThe">
+                <h2>
+                    {storeId}
+                    {/* <span className="ofThe">
+                {firstPart}
                     <span className="of">Of</span>
                     <span className="the">The</span>
                     </span>
-                    {lastPart}
-                </h1>
+                    {lastPart} */}
+                </h2>
             <h3 className="tagline">
                 <span>{tagline}</span>
             </h3>
