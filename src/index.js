@@ -1,24 +1,6 @@
+// let's go!
 import React from 'react';
 import {render} from 'react-dom';
-import StorePicker from './components/StorePicker'
-
-render(<StorePicker/>, document.querySelector('#main'));
-
-
-
-// import ReactDOM from 'react-dom';
-// import './index.css';
-// import App from './App';
-// import reportWebVitals from './reportWebVitals';
-
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-// reportWebVitals(console.log);
+import Router from './components/Router'
+import './css/style.css';
+render(<Router/>, document.querySelector('#main')); 
