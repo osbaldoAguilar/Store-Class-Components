@@ -66,7 +66,7 @@ class Inventory extends React.Component {
         } else {
             return (
                     <div className="inventory">
-                        <h2>Inventory</h2>
+                            <h2>Inventory</h2>
                             {logout}
                             {Object.keys(this.props.fish).map(key => <EditFishForm 
                                 key={key} 
