@@ -1,10 +1,11 @@
 import Rebase from 're-base';
 import firebase from 'firebase';
+import 'dotenv/config'
 
 const firebaseApp = firebase.initializeApp({
-    apiKey: "AIzaSyAa-SV8NOdp9o1WgdcADV0FpHW1MuatITI",
-    authDomain: "fish-store-2022.firebaseapp.com",
-    databaseURL: "https://fish-store-2022-default-rtdb.firebaseio.com",
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    databaseURL: process.env.REACT_APP_DATABASE_URL,
     // projectId: "fish-store-2022",
     // storageBucket: "fish-store-2022.appspot.com",
     // messagingSenderId: "132631468803",
@@ -14,7 +15,6 @@ const firebaseApp = firebase.initializeApp({
 
 // firebase  App - rebase binding
 const base = Rebase.createClass(firebaseApp.database());
-
 // this is a named export 
 export { firebaseApp };
 
